@@ -1,7 +1,190 @@
 @import './vendor/normalize';
-nav{
-    background-color: #414141;
-}
-a{
-    color: red;
-}
+@import'./partial/colors';
+@import'./partial/typography';
+@import'./partial/mixins';
+
+body{background-color: $primary-color;}
+
+head{
+    background-color:$darker-background;
+    font-family: $heading;
+    font-size:larger;
+    display: inline-block;
+  }
+  nav{
+    display: inline-block;
+    align-items: center;
+    background-color: $darker-background;
+  }
+  .navcolorbar{
+    background-color: $darker-background;
+    width: 100%;
+    height: 50px;
+  }
+  
+  .topnav{
+    background-color:$darker-background;
+    overflow: auto;
+    width: 100%;
+    }
+  
+    nav ul{
+      text-decoration-color: antiquewhite;
+      font-family: $title;
+      background-color: $darker-background;
+      font-size: x-large;
+      text-transform: uppercase;
+      text-align: right;
+     padding-left: 500px; 
+     vertical-align: center;
+     list-style-type: none;
+     display: inline-block;
+     position: right;
+    }
+    
+    .navlink{
+      color: antiquewhite
+    }     
+    
+    .abtlink{
+      color: $secondary-font-color;
+    }
+  
+  h1{
+    text-decoration-color: antiquewhite;
+    color: antiquewhite;
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-align: left;
+    font-size: x-large;
+font-family: $title;
+    display: inline-block; justify-content: space-between; align-items: center;
+    background-color: $darker-background;
+    padding-left: 100px;
+    vertical-align: center;
+  }
+  head{ 
+  overflow: auto;
+  margin: auto;
+  text-transform: uppercase;
+  padding: none;
+  text-align: right;
+  display: inline;
+  align-items: center;
+  background-color: $darker-background;
+  }
+  
+  img{
+      position: right;
+      padding-left: 70px; 
+      margin-left: 70px;
+      left: 70px;
+      border: none;
+  }
+  
+  figcaption{
+      right: 70px;
+      margin-left: 70px;
+      padding-left: 10px;
+  }
+  
+  
+  nav li{
+      text-align: left;
+      position: left;
+      display: inline-block;
+      padding-right: 2rem;
+  }
+  
+    .p3{
+      border-radius: none;
+      position: relative;
+      left:-200px;
+      text-align: center;
+      display: inline-block;
+      margin-right: 1rem;
+      margin-top: 2rem;
+      width: 20rem;
+      border: none;
+      padding-left: 20px;
+      padding-top: 220px;
+      bottom: 0;
+      vertical-align: middle;
+      font-size: large;
+      font-family: $primary-font;
+      color: $primary-font-color;
+      margin-bottom: 0;
+    }
+    .aside{
+      display: inline-block;
+      position: right, relative;
+      left: -50px;
+      top: -150px;
+      align-items: center;
+      padding-right: 100px;
+      margin-right: 1rem;
+      width: 30rem;
+      border: none;
+      vertical-align: middle;
+    }
+   
+    .p1{
+        @include discoverOJ;
+      text-align: center;
+      margin-right: 1rem;
+      width: 20rem;
+      border: none;
+      padding-left: 150px;
+      padding-top: -150px;
+      padding-bottom: 20px;
+      align-items: center;
+      position: absolute;
+    }
+    .p2{
+      font-family:$title;
+      font-size: 45pt;
+      color:$primary-font-color;
+      text-decoration-color:$primary-font-color;
+      text-align: center;
+      margin-right: 1rem;
+      width: 20rem;
+      border: none;
+      padding-left: 155px;
+      padding-top: 100px;
+      align-items: center;
+      position: absolute;
+    }
+  .star{
+    display:inline-block;
+    margin: none;
+    padding-left:150px;
+    padding-top:200px;
+    margin-bottom:10px;
+    vertical-align: top;
+  }
+    span{
+      font-family: $title;
+      color: $secondary-font-color;
+      border-radius: none;
+      text-align: center;
+      display: inline-block;
+      margin-top: none;
+      width: none;
+      border: none;
+      vertical-align: middle;
+      font-size: medium;
+      align-items: center;
+      padding-right: 5px;
+      text-decoration-color:$secondary-font-color;
+    }
+  
+  footer {
+      font-family: $primary-font;
+      color: $primary-font-color;
+      font-size: x-small;
+    align-content: center;
+     margin-left: auto;
+    max-width: auto;
+    padding: 10px;
+  }
+  
